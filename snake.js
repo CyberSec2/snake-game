@@ -1,4 +1,5 @@
 // Game variables
+//J.P. Just a test comment
 let canvas = document.getElementById('game'); // Get the canvas element
 let context = canvas.getContext('2d'); // Get the 2D context for the canvas
 let box = 20; // Size of each box (each move is one box)
