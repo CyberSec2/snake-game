@@ -2,5 +2,7 @@
     "azure_storage_account_key": "SENLq4NNhFv8kafwxvCSviMURb/cLoErESgQfZ4IX6EZdnB+P4BGOuAk3vwCULKaIuTpZKSHJk+ASts5a0kw==",
     "stripe_api_key": "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",
     "stripe_test_api_key": "sk_test_510inpVILgci9PqXdVRzjZAugJOKYBHPGDXVHPONZHInADIqLeBON8FTO3ZOnRJeNDSeHSNIBVALaXEaj4ZSMZTIKGOyOPRXPtS",
-    "stripe_dev_api_key": "sk_test_510inpVILgci9PqXdVRzjZAugJOKYBHPGDXVHPONZHInADIqLeBON8FTO3ZOnRJeNDSeHSNIBVALaXEaj4ZSMZTIKGOyOPRXPtS"
+    "stripe_dev_api_key": "sk_test_510inpVILgci9PqXdVRzjZAugJOKYBHPGDXVHPONZHInADIqLeBON8FTO3ZOnRJeNDSeHSNIBVALaXEaj4ZSMZTIKGOyOPRXPtS",
+    "stripe_uat_api_key": "sk_test_510inpVILgci9PqXdVRzjZAugJOKYBHPGDXVHPONZHInADIqLeBON8FTO3ZOnRJeNDSeHSNIBVALaXEaj4ZSMZTIKGOyOPRXPtS"
+
 }
