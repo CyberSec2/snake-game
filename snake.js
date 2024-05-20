@@ -6,12 +6,34 @@ let box = 20; // Size of each box (each move is one box)
 let snake = []; // Snake array
 snake[0] = { x: 10 * box, y: 10 * box }; // Initial snake position
 let direction = "RIGHT"; // Initial direction
+
 let food = {
     x: Math.floor(Math.random() * 30) * box, // Random food x-position
     y: Math.floor(Math.random() * 30) * box  // Random food y-position
 }
 let score = 0; // Initial score
 
+// Add an array of obstacles
+let obstacles = [
+    { x: 5 * box, y: 7 * box },
+    { x: 8 * box, y: 12 * box },
+    { x: 13 * box, y: 15 * box },
+    // Add more obstacles as needed
+];
+
+// Function to draw an obstacle
+function drawObstacle(x, y) {
+    context.fillStyle = 'blue'; // Obstacle color
+    context.fillRect(x, y, box, box); // Draw a box for the obstacle
+}
+
+
+// In your collision detection, check for collision with obstacles
+for(let i = 0; i < obstacles.length; i++) {
+    if(snake[0].x == obstacles[i].x && snake[0].y == obstacles[i].y) {
+        // End the game (or whatever you want to happen on collision)
+    }
+}
 // Function to draw the snake
 function drawSnake(x, y) {
     context.fillStyle = 'green'; // Snake color
@@ -46,6 +68,11 @@ function draw() {
     context.fillStyle = 'red'; // Food color
     context.fillRect(food.x, food.y, box, box); // Draw the food
 
+    // In your game loop, draw the obstacles
+    for(let i = 0; i < obstacles.length; i++) {
+        drawObstacle(obstacles[i].x, obstacles[i].y);
+    }
+    //drawObstacle(5 * box, 7 * box); // Draw the obstacle    
     // Old head position
     let snakeX = snake[0].x;
     let snakeY = snake[0].y;
